@@ -1,4 +1,4 @@
-# ReactJiraClone
+### React-Jira-Clone
 
 ### Initial setup
 ```sh
