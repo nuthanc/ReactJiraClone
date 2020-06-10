@@ -11,3 +11,11 @@ npx create-react-app react-jira-clone
 ### index and components
 * Create index.js and components
 * Create App.js inside components
+
+### Setup basic Action Creators and Reducers folders
+* Create actions and reducers dir inside src
+* Create index.js within both
+
+### Basic issues in components
+* Create issues dir inside components
+* Create IssueCreate and IssueList

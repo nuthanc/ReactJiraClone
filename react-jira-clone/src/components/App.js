@@ -1,7 +1,14 @@
 import React from 'react';
+import IssueCreate from './issues/IssueCreate';
+import IssueList from './issues/IssueList';
 
 const App = () => {
-  return <div>Hi there, I am App of Jira Clone</div>;
+  return (
+    <div>
+      <IssueCreate />
+      <IssueList />
+    </div>
+  );
 };
 
 export default App;
