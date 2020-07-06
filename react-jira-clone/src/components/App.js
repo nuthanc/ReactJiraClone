@@ -1,4 +1,7 @@
 import React from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
+import history from '../history';
+
 import IssueCreate from './issues/IssueCreate';
 import IssueList from './issues/IssueList';
 

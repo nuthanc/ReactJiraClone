@@ -19,3 +19,11 @@ npx create-react-app react-jira-clone
 ### Basic issues in components
 * Create issues dir inside components
 * Create IssueCreate and IssueList
+
+### Redux installations
+```sh
+npm install redux react-redux redux-thunk
+```
+
+### Routes, semantic ui and History object
+* Create history in history.js and routes in App.js
