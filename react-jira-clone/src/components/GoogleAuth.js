@@ -13,6 +13,8 @@ class GoogleAuth extends React.Component {
         })
         .then(() => {
           this.auth = window.gapi.auth2.getAuthInstance();
+          // console.log(this.auth.currentUser.get())
+
           this.onAuthChange(this.auth.isSignedIn.get());
           this.auth.isSignedIn.listen(this.onAuthChange);
         });
@@ -21,7 +23,11 @@ class GoogleAuth extends React.Component {
 
   onAuthChange = (isSignedIn) => {
     if (isSignedIn) {
-      this.props.signIn(this.auth.currentUser.get().getId());
+      const user = {
+        id: this.auth.currentUser.get().getId(),
+        name: this.auth.currentUser.get().getBasicProfile().getGivenName(),
+      };
+      this.props.signIn(user);
     } else {
       this.props.signOut();
     }
@@ -61,6 +67,8 @@ class GoogleAuth extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+  // console.log("In GoogleAuth")
+  // console.log(state);
   return { isSignedIn: state.auth.isSignedIn };
 };
 
