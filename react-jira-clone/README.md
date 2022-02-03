@@ -41,3 +41,7 @@ npm install react-router-dom
 * GoogleAuth.isSignedIn.listen(listener)
   * Listen for changes in the current user's sign-in state.
   * listener: A function that takes a boolean value. listen() passes true to this function when the user signs in, and false when the user signs out.
+
+### Add Redux form
+* npm install redux-form
+* Problem with redux-form in IssueCreate

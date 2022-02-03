@@ -18,7 +18,9 @@ const Header = ({ name }) => {
         Create Issues
       </Link>
       <div className="right item">
-        <div><h4 style={{marginRight: '10px'}}>{name}</h4></div>
+        <div>
+          <h4 style={{ marginRight: '10px' }}>{name}</h4>
+        </div>
         <GoogleAuth />
       </div>
     </div>

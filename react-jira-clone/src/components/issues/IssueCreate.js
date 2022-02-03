@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
+import { Field, reduxForm } from 'redux-form';
 
-const IssueCreate = () => {
+const IssueCreate = (props) => {
   return (
     <div className="ui segment">
       <h1 className="ui header">Issue Create</h1>
@@ -8,4 +9,6 @@ const IssueCreate = () => {
   );
 };
 
-export default IssueCreate;
+export default reduxForm({
+  form: 'issueCreate',
+})(IssueCreate);
